@@ -18,4 +18,26 @@
 <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/documents/51455449-0ff1-4c4f-9bf1-a659bcbf11c1.png?token=QIt5Hf4plOGv5Kac6XdMpEElO9y_wDCQmzh4uVvMFMw&height=630&width=1200&expires=33243457708">
 
 <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-<iframe src="video.mp4" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+
+
+<h1>The BEST videos</h1>
+
+<!-- iframe to play random video -->
+<iframe id="videoFrame" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+
+<script>
+  // Function to generate a random number between min and max (inclusive)
+  function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  // Generate a random number between 1 and 15
+  var randomVideoNumber = getRandomInt(1, 8);
+
+  // Construct the URL of the random video
+  var videoUrl = 'video' + randomVideoNumber + '.mp4';
+
+  // Set the src attribute of the iframe to the random video URL
+  document.getElementById('videoFrame').src = videoUrl;
+</script>
+
