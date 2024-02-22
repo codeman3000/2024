@@ -1,43 +1,24 @@
-<!-- HTML Meta Tags -->
-<title>Campolindo High School</title>
-<meta name="description" content="The offical website for Campolindo High.">
+<!DOCTYPE html>
+<html>
 
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://campolindohighschool.com">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Campolindo High School">
-<meta property="og:description" content="The offical website for Campolindo High.">
-<meta property="og:image" content="https://opengraph.b-cdn.net/production/documents/51455449-0ff1-4c4f-9bf1-a659bcbf11c1.png?token=QIt5Hf4plOGv5Kac6XdMpEElO9y_wDCQmzh4uVvMFMw&height=630&width=1200&expires=33243457708">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta property="twitter:domain" content="campolindohighschool.com">
-<meta property="twitter:url" content="https://campolindohighschool.com">
-<meta name="twitter:title" content="Campolindo High School">
-<meta name="twitter:description" content="The offical website for Campolindo High.">
-<meta name="twitter:image" content="https://opengraph.b-cdn.net/production/documents/51455449-0ff1-4c4f-9bf1-a659bcbf11c1.png?token=QIt5Hf4plOGv5Kac6XdMpEElO9y_wDCQmzh4uVvMFMw&height=630&width=1200&expires=33243457708">
+<body>
+  <h1>Control + R to generate new screenshot</h1>
+  <marquee>Thank's for using my screenshot generator. I hope you enjoyed the experience of capturing your screen with a single click. If you liked it, please share it with your friends and family. If you didn't like it, please share it with your enemies and rivals. Either way, you'll be helping me spread the word about this awesome tool. And don't forget to rate me five stars on the app store. I'm not desperate, I just need validation.</marquee>
+  <script src="script.js"></script>
 
-<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
 
-
-<h1>The BEST videos</h1>
-
-<!-- iframe to play random video -->
-<iframe id="videoFrame" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
-
-<script>
-  // Function to generate a random number between min and max (inclusive)
-  function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-
-  // Generate a random number between 1 and 15
-  var randomVideoNumber = getRandomInt(1, 8);
-
-  // Construct the URL of the random video
-  var videoUrl = 'video' + randomVideoNumber + '.mp4';
-
-  // Set the src attribute of the iframe to the random video URL
-  document.getElementById('videoFrame').src = videoUrl;
-</script>
-
+</html>
