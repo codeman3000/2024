@@ -1,24 +1,43 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2024drugs</title>
+<style>
+  body {
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    animation: rainbowBackground 10s linear infinite;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden; /* Hide horizontal overflow */
+  }
+
+  @keyframes rainbowBackground {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+
+  h1 {
+    color: white;
+    font-size: 20vw; /* 80% of the viewport width */
+    margin-top: 10vh; /* Adjust the vertical margin as needed */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: flash 1s linear infinite;
+  }
+
+  @keyframes flash {
+    0%, 49% {
+      opacity: 0;
+    }
+    50%, 100% {
+      opacity: 1;
+    }
+  }
+</style>
 </head>
-
 <body>
-  <h1>Control + R to generate new screenshot</h1>
-  <marquee>Thank's for using my screenshot generator. I hope you enjoyed the experience of capturing your screen with a single click. If you liked it, please share it with your friends and family. If you didn't like it, please share it with your enemies and rivals. Either way, you'll be helping me spread the word about this awesome tool. And don't forget to rate me five stars on the app store. I'm not desperate, I just need validation.</marquee>
-  <script src="script.js"></script>
-
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <h1>NO</h1>
 </body>
-
 </html>
+
