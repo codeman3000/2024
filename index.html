@@ -38,6 +38,27 @@
 </head>
 <body>
   <h1>NO DRUGS</h1>
+
+  <!-- Add a div to display the list of 3 letter agencies -->
+  <div id="agencyList"></div>
+
+  <!-- Add a footer at the bottom of the page -->
+  <footer id="footer">sending <span id="ipAgency"></span> your IP Address</footer>
+
+  <!-- JavaScript to populate the list and cycle through agencies -->
+  <script>
+    // List of 3 letter agencies
+    var agencies = ["FBI", "DEA", "CIA"];
+    var index = 0;
+
+    // Function to update the footer with the current agency
+    function updateFooter() {
+        document.getElementById("ipAgency").innerText = agencies[index];
+        index = (index + 1) % agencies.length;
+    }
+
+    // Update the footer every 0.3 seconds
+    setInterval(updateFooter, 300);
+  </script>
 </body>
 </html>
-
