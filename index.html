@@ -3,7 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- HTML Meta Tags -->
 <title>2024drugs</title>
+<meta name="description" content="2024’s most popular website for buying and selling…">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://2024drugs.com">
+<meta property="og:type" content="website">
+<meta property="og:title" content="2024drugs">
+<meta property="og:description" content="2024’s most popular website for buying and selling…">
+<!--
+  You can generate this image URL dynamically: https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/{site_text}/{title_text}/{image_url}/og.png
+  Replace the variables in the brackets with your own values and use this URL in the image tag below this comment. Ensure values are URL encoded.
+  For more information, read: https://www.opengraph.xyz/blog/how-to-implement-dynamic-open-graph-images
+-->
+<meta property="og:image" content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/2024drugs.com/2024drugs/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2F56188dc2-e3c3-4ce5-a8b1-1323953e37b9.jpg%3Ftoken%3DFORiB3YuXMB9HERtclPAWWBLMSBisufr3mJbjlWtsrQ%26height%3D800%26width%3D1200%26expires%3D33239445186/og.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="2024drugs.com">
+<meta property="twitter:url" content="https://2024drugs.com">
+<meta name="twitter:title" content="2024drugs">
+<meta name="twitter:description" content="2024’s most popular website for buying and selling…">
+<!--
+  You can generate this image URL dynamically: https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/{site_text}/{title_text}/{image_url}/og.png
+  Replace the variables in the brackets with your own values and use this URL in the image tag below this comment. Ensure values are URL encoded.
+  For more information, read: https://www.opengraph.xyz/blog/how-to-implement-dynamic-open-graph-images
+-->
+<meta name="twitter:image" content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/2024drugs.com/2024drugs/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2F56188dc2-e3c3-4ce5-a8b1-1323953e37b9.jpg%3Ftoken%3DFORiB3YuXMB9HERtclPAWWBLMSBisufr3mJbjlWtsrQ%26height%3D800%26width%3D1200%26expires%3D33239445186/og.png">
+
+<!-- Meta Tags Generated via https://www.opengraph.xyz -->
 <style>
   body {
     background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
@@ -37,7 +66,128 @@
 </style>
 </head>
 <body>
-  <h1>NO</h1>
+  <h1>NO DRUGS</h1>
+
+  <!-- Add a div to display the list of 3 letter agencies -->
+  <div id="agencyList"></div>
+
+  <!-- Add a footer at the bottom of the page -->
+  <footer id="footer">sending <span id="ipAgency"></span> your IP Address</footer>
+
+  <!-- JavaScript to populate the list and cycle through agencies -->
+  <script>
+    // List of 3 letter agencies
+    var agencies = [
+  "Federal Bureau of Investigation (FBI)",
+  "Central Intelligence Agency (CIA)",
+  "National Aeronautics and Space Administration (NASA)",
+  "Royal Canadian Mounted Police (RCMP)",
+  "Canada Revenue Agency (CRA)",
+  "Health Canada",
+  "Ministry of the Interior",
+  "Ministry of National Education",
+  "French National Centre for Scientific Research (CNRS)",
+  "Google",
+  "Amazon",
+  "Gamestop",
+  "Apple",
+  "Microsoft",
+  "Tesla",
+  "Facebook",
+  "Twitter",
+  "Netflix",
+  "Disney",
+  "Samsung",
+  "Toyota",
+  "McDonald's",
+  "Coca-Cola",
+  "Nike",
+  "BMW",
+  "Sony",
+  "Walmart",
+  "IBM",
+  "Intel",
+  // Famous people, politicians, celebrities
+  "Barack Obama",
+  "Elon Musk",
+  "Oprah Winfrey",
+  "Beyoncé",
+  "Taylor Swift",
+  "Donald Trump",
+  "Bill Gates",
+  "Angelina Jolie",
+  "Kanye West",
+  "Ellen DeGeneres",
+  "Leonardo DiCaprio",
+  "Emma Watson",
+  "Jennifer Lawrence",
+  "Rihanna",
+  "Justin Bieber",
+  "Kim Kardashian",
+  "Lionel Messi",
+  "Cristiano Ronaldo",
+  "Serena Williams",
+  "Michael Jordan",
+  "Emma Stone",
+  "Tom Hanks",
+  "Scarlett Johansson",
+  "Stephen Curry",
+  "Dwayne Johnson",
+  "Michelle Obama",
+  "Pope Francis",
+  "Malala Yousafzai",
+  "Greta Thunberg",
+  // Countries
+  "United States",
+  "Canada",
+  "France",
+  "United Kingdom",
+  "Germany",
+  "Italy",
+  "Spain",
+  "Australia",
+  "Brazil",
+  "Japan",
+  "China",
+  "India",
+  "Mexico",
+  "South Korea",
+  "Russia",
+  "Argentina",
+  "Indonesia",
+  "Saudi Arabia",
+  "South Africa",
+  "Turkey",
+  "Nigeria",
+  "Egypt",
+  "Pakistan",
+  "Iran",
+  "Iraq",
+  "Israel",
+  "Greece",
+  "Sweden",
+  "Norway",
+  "Denmark",
+  "Finland",
+  "Netherlands",
+  "Belgium",
+  "Switzerland",
+  "Austria",
+  "Portugal",
+  "Ireland",
+  "New Zealand",
+  "Singapore"
+];
+var index = 0;
+
+    // Function to update the footer with the current agency
+    function updateFooter() {
+        document.getElementById("ipAgency").innerText = agencies[index];
+        index = (index + 1) % agencies.length;
+    }
+
+    // Update the footer every 0.3 seconds
+    setInterval(updateFooter, 700);
+  </script>
 </body>
 </html>
-
